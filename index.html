@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!--  Image section -->
+    <div class="container">
+        <div class="image-section">
+            <div class="image-content">
+                <img src="img.jpg" alt="Registration Illustration">
+                <h2>Join Our Community</h2>
+                <p>Create your account and get access to exclusive features and content tailored just for you.</p>
+            </div>
+        </div>
+
+        <!-- Form section -->
+        <div class="form-section">
+            <div class="form-header">
+                <h1>Create Account</h1>
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+
+            <!-- name field -->
+            <form id="registrationForm">
+                <div class="form-group" id="nameGroup">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe">
+                    <span class="error-message" id="nameError">Full name is required</span>
+                </div>
+
+                <!-- email address field -->
+                <div class="form-group" id="emailGroup">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com">
+                    <span class="error-message" id="emailError">Please enter a valid email address</span>
+                </div>
+
+                <!-- mobile no. field -->
+                <div class="form-group" id="phoneGroup">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="1234567890">
+                    <span class="error-message" id="phoneError">Please enter a valid 10-digit phone number</span>
+                </div>
+
+                <!-- Password field -->
+                <div class="form-group" id="passwordGroup">
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="••••••••">
+                        <span class="toggle-password" id="togglePassword">Show</span>
+                    </div>
+                    <span class="error-message" id="passwordError">Password must be at least 6 characters</span>
+                </div>
+
+                <!-- Confirm password field -->
+                <div class="form-group" id="confirmPasswordGroup">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-container">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••">
+                        <span class="toggle-password" id="toggleConfirmPassword">Show</span>
+                    </div>
+                    <span class="error-message" id="confirmPasswordError">Passwords do not match</span>
+                </div>
+
+                <!-- submit(register)  button-->
+                <button type="submit">Register</button>
+            </form>
+
+            <!-- successful message -->
+            <div class="success-message" id="successMessage">
+                Registration successful! Welcome...
+            </div>
+        </div>
+    </div>
+    <!-- script file -->
+    <script src="main.js"></script>
+</body>
+</html>
